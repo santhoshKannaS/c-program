@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+
+{
+    char first[100], second[100], temp[100];
+    printf("Enter a first string: ");
+    gets(first);
+    printf("Enter a second string: ");
+    gets(second);
+    
+    printf("\nBefore swapping\n");
+    printf(" The string is : %s %s", first,second);
+    strcpy(temp, first);
+    strcpy(first, second);
+    strcpy(second, temp);
+    
+    printf("\nAfter swapping\n");
+    printf(" The string is %s %s", first,second);
+    
+    return 0;
+}
