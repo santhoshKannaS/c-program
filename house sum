@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    
+    int m;
+    int i,n,max;
+    int count=0;
+  
+    printf("Enter the number of houses in row: ");
+    scanf("%d",&n);
+    printf("Enter the money that each house holds: ");
+    scanf("%d",&m);
+    //checking the non adjecent house
+    for(i=1;i<=n;i++)
+    {
+        if(i%2!=0){
+    count++;
+    }
+    }
+    max=count * m;
+    printf("The maximim amount theif can be rob is %d", max);
+    getch();
+    return 0;
+}
