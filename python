@@ -1,0 +1,18 @@
+l=['a','A','e','E','i','I','O','o','U','u']
+str=input("Enter an string: ")
+l1=[]
+for i in range(0,len(str)):
+    if str[i] in l:
+        str[i]=0
+        l1.append(str(i))
+for i in range(0,len(l1)):
+    tmp=l1[i]
+    l1[i]=l1[len(l1)-1]
+    l1[len(l1)-1]=tmp
+print(l1)
+    if str[i]=o:
+        for i in range(l1):
+            str[i]=l1[i]
+            print(str)
+
+     
