@@ -1,0 +1,34 @@
+#include<stdio.h>  
+void main ()  
+{  
+  char enorex[10][2],dummy;  
+  int count[2],i,n;  
+  long int timestamp[2]; 
+  
+  scanf("%d",&n);
+  
+  for (i=0;i<n;i++)  
+  {  
+      
+    printf("Enter the timestamp, count, and record of the building %d: ",i+1);  
+    scanf("%l %d %s",&timestamp[i],&count[i], enorex[i]);  
+    scanf("%c",&dummy);   
+  } 
+  
+  
+  
+  
+  
+  printf("Printing the Record details ...\n");  
+ 
+ 
+  for (i=0;i<3;i++)  
+  {  
+    printf("%l %d %s\n",timestamp[i],count[i], enorex[i]);  
+  }
+  
+  
+  
+  
+  
+}  
